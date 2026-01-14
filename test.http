@@ -1,0 +1,14 @@
+#GET REQUEST
+GET http://localhost:4004/odata/v4/my/Companies
+
+###POST REQUEST
+POST http://localhost:4004/odata/v4/my/Companies
+Content-Type: application/json
+
+{
+    "ID": "4",
+    "Name": "Credithy",
+    "Zip": 1234,
+    "Revenue": 433.138,
+    "Date": "2022-05-14"
+}
