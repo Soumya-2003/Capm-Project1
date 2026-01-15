@@ -1,7 +1,7 @@
 namespace my.companies;
 
 entity Company{
-    key ID: UUID;
+    key ID: Integer;
     Name: String;
     Zip: Integer;
     Revenue: Decimal;
