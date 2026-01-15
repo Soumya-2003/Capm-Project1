@@ -23,3 +23,30 @@ Content-Type: application/json
 
 ###DELETE REQUEST
 DELETE http://localhost:4004/odata/v4/my-company/Companies/72
+
+
+###GET REQUEST Location
+GET http://localhost:4004/odata/v4/company-location/Location
+
+###POST
+
+POST http://localhost:4004/odata/v4/company-location/Location
+Content-Type: application/json
+
+{
+    "Zip": 713146,
+    "City": "Burdwan",
+    "Active": true
+}
+
+
+###UPDATE
+PATCH http://localhost:4004/odata/v4/company-location/Location/302197
+Content-Type: application/json
+
+{
+    "City": "Mumbai"
+}
+
+###DELETE Request
+DELETE  http://localhost:4004/odata/v4/company-location/Location/713146
