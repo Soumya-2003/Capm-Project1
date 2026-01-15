@@ -1,14 +1,25 @@
 #GET REQUEST
-GET http://localhost:4004/odata/v4/my/Companies
+GET http://localhost:4004/odata/v4/my-company/Companies
 
 ###POST REQUEST
-POST http://localhost:4004/odata/v4/my/Companies
+POST http://localhost:4004/odata/v4/my-company/Companies
 Content-Type: application/json
 
 {
-    "ID": "4",
+    "ID": 4,
     "Name": "Credithy",
     "Zip": 1234,
     "Revenue": 433.138,
     "Date": "2022-05-14"
 }
+
+###PATCH REQUEST
+PATCH http://localhost:4004/odata/v4/my-company/Companies/72
+Content-Type: application/json
+
+{
+    "Zip": 908020
+}
+
+###DELETE REQUEST
+DELETE http://localhost:4004/odata/v4/my-company/Companies/72
