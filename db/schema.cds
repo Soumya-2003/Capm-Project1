@@ -7,3 +7,9 @@ entity Company{
     Revenue: Decimal;
     Date: Date;
 }
+
+entity Location{
+    key Zip : Integer;
+    City: String(10);
+    Active: Boolean;
+}
